@@ -25,10 +25,10 @@ const Navbar = () => {
           <Link to='/' className="nav-link">About</Link>
         </li>
         <li className="nav-item">
-          <Link id='login' to='/' className="nav-link">Login</Link>
+          <Link id='login' to='/login' className="nav-link">Login</Link>
         </li>
         <li className="nav-item">
-          <Link id='register' to='/' className="nav-link">Register</Link>
+          <Link id='register' to='/register' className="nav-link">Register</Link>
         </li>
       </ul>
     </div>

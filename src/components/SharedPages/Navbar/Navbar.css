@@ -5,7 +5,7 @@ ul li{
 }
 
 #login{
-    background: red;
+    background: orange;
     color: #fff;
     border-radius: 12px;
     padding-left: 20px;
@@ -15,4 +15,23 @@ ul li{
 
 #login:hover{
     background: blue;
+}
+
+#register{
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid orange;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+#register:hover{
+    background-color: orange;
+    color: #fff;
+}
+
+.my-nav{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
 }
