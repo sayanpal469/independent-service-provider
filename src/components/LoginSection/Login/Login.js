@@ -5,7 +5,7 @@ import auth from '../../../firebase.init';
 import Loading from '../../SharedPages/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import login from '../../../assets/Log In/4957136.jpg'
-import { async } from '@firebase/util';
+
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -26,14 +26,15 @@ const Login = () => {
 
       const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
-      if(loading || sending) {
-          return <Loading/>
-      }
 
       if(user) {
         navigate(from, {replace: true})
       }
-      
+
+      if(loading || sending) {
+        return <Loading/>
+    }
+    
       if (error) {
         errorElement = <p className='text-danger'>Error: {error?.message}</p>
       }
@@ -50,10 +51,10 @@ const Login = () => {
       const email = emailRef.current.value
       if (email) {
         await sendPasswordResetEmail(email);
-        alert('Sent email');
+        toast("Sent email");
        }
         else{
-        alert('Please enter your email address');
+        toast("Please enter your email address");
       }
       }
 
@@ -88,10 +89,11 @@ const Login = () => {
 <p className='mt-2'>Or</p>
 <div className='dag'></div>
 </div>
-<ToastContainer />
 <SocialLogin/>
 </form>
 </div>
+<ToastContainer></ToastContainer>
+
 </div>
     );
 };

@@ -5,7 +5,7 @@ const CheckOut = () => {
     return (
         <section class="contact-section mt-5 py-5" id="contact">
           <div class="text-center mb-5">
-            <h2 class="section-heading text-white">Contact us</h2>
+            <h2 class="section-heading text-white">Contact Me</h2>
           </div>
 
           <div class="contact container">

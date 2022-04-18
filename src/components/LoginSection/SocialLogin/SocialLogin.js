@@ -9,6 +9,7 @@ import Loading from '../../SharedPages/Loading/Loading';
 
 const SocialLogin = () => {
     const navigate = useNavigate()
+    let errorElement;
 
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth)
     const [signInWithGithub, user2, loading2, error2] = useSignInWithGithub(auth);
@@ -17,12 +18,17 @@ const SocialLogin = () => {
         return <Loading/>
     }
 
-    if(user) {
-        navigate('/')
+    if(error || error2) {
+        errorElement = <p className='text-danger text-center'>Error: {error?.message} {error2?.message}</p>
+    }
+
+    if(user || user2) {
+        navigate('/home')
     }
 
     return (
         <div className='social'>
+            {errorElement}
             <Link onClick={ () => signInWithGoogle()} className='me-2' to='/'>
             <FcGoogle/>
             </Link>

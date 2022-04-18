@@ -29,6 +29,10 @@ const Register = () => {
       if(loading) {
          return <Loading/>
       }
+
+      if(user) {
+        navigate('/home')
+      }
     
     const handelRegister = async (e) => {
         e.preventDefault()
@@ -37,6 +41,9 @@ const Register = () => {
         const email = e.target.email.value
         const password = e.target.password.value
 
+      if(password < 6) {
+        setError('minimum 6 charecter')
+      }
 
       if(password !== confirmPassword) {
           setError('Password did not match')
@@ -49,7 +56,7 @@ const Register = () => {
     }
 
     return (
-        <div className='row'>
+        <div className='row mb-5'>
             <div className='col-lg-6 sign-up-img'>
             <img src={signUp} alt="" />
             </div>
