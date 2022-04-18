@@ -58,28 +58,28 @@ const Register = () => {
         <form id='form' onSubmit={handelSubmit} className='w-75 mx-auto mt-5 shadow p-5 h-auto'>
         <h1 className='text-center mb-5 text-primary'>Register</h1>
         
-        <div class="mb-3">
-        <input  name='name' type="text" class="input form-control" placeholder='Name'/>
+        <div className="mb-3">
+        <input  name='name' type="text" className="input form-control" placeholder='Name'/>
         </div>
 
 
-        <div class="mb-3">
-        <input  name='email' type="email" class="input form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Email'/>
+        <div className="mb-3">
+        <input  name='email' type="email" className="input form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Email'/>
         </div>
 
-    <div class="mb-3">
-    <input name='password' type="password" class="form-control input" id="exampleInputPassword1" placeholder='Password'/>
+    <div className="mb-3">
+    <input name='password' type="password" className="form-control input" id="exampleInputPassword1" placeholder='Password'/>
     </div>
 
-    <div class="mb-3">
-    <input onBlur={handelConfirmPasswordBlur} name='confirmPassword' type="password" class="form-control input" id="exampleInputPassword1" placeholder='Confirm Password'/>
+    <div className="mb-3">
+    <input onBlur={handelConfirmPasswordBlur} name='confirmPassword' type="password" className="form-control input" id="exampleInputPassword1" placeholder='Confirm Password'/>
     </div>
 
 
     <div className='d-flex justify-content-between mb-2'>
-    <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
-    <label class="form-check-label" for="exampleCheck1">Please accept <br /> All terms and conditions</label>
+    <div className="mb-3 form-check">
+    <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
+    <label className="form-check-label" for="exampleCheck1">Please accept <br /> All terms and conditions</label>
     </div>
 
     <Link id='forgot' to='/login'>Forgot Password?</Link>
@@ -87,7 +87,7 @@ const Register = () => {
 
 <p className='text-danger text-center'>{error}</p>
 
-  <button type="submit" class="btn btn-primary w-100">Register</button>
+  <button type="submit" className="btn btn-primary w-100">Register</button>
   <p className='text-center mt-2'>Already have an account? <Link to='/login' className='text-primary'>LogIn</Link> </p>
   <div className='or-area mt-3'>
     <div className='dag'></div>
