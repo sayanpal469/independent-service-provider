@@ -10,6 +10,7 @@ import RequireAuth from './components/LoginSection/PrivateAuth/RequireAuth';
 import CheckOut from './components/CheakOut/CheckOut/CheckOut';
 import About from './components/SharedPages/About/About';
 import Gallery from './components/HomeSection/Gallery/Gallery';
+import Blogs from './components/SharedPages/Blogs/Blogs';
 
 function App() {
   return (
@@ -26,8 +27,7 @@ function App() {
               <CheckOut/>
             </RequireAuth>
           }></Route>
-
-          <Route path='/blog' element={ <About/> }></Route>
+          <Route path='/blogs' element={ <Blogs/> }></Route>
           <Route path='/about' element={ <About/> }></Route>
           
           <Route path='*' element={ <NotFound/> }></Route>
