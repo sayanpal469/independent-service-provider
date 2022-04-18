@@ -6,9 +6,11 @@ const About = () => {
     return (
         <div className='d-flex  align-items-center mx-auto'>
             <div className='about-para w-50 col-lg-6'>
+                <div className='focused'>
                 <h1 className='font-weight-bold'>THIS IS ME <br />
-                    <span className='name mt-2'>SAYAN PAUL</span>
+                    <span className='name'>SAYAN PAUL</span>
                 </h1>
+                </div>
 
                 <p className='mt-5'>
              I live in India. My hometown is West Bengal. I am a student of <strong>BA</strong> and my subject is <strong>Bengali</strong>. But now I am learning <strong>MERN STACK</strong> Devolopment form <strong className='text-primary'>

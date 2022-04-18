@@ -9,6 +9,7 @@ import NotFound from './components/SharedPages/NotFound/NotFound';
 import RequireAuth from './components/LoginSection/PrivateAuth/RequireAuth';
 import CheckOut from './components/CheakOut/CheckOut/CheckOut';
 import About from './components/SharedPages/About/About';
+import Gallery from './components/HomeSection/Gallery/Gallery';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Routes>
           <Route path='/' element={ <Home/> }></Route>
           <Route path='/services' element={ <Services/> }></Route>
+          <Route path='/gallery' element={ <Gallery/> }></Route>
           <Route path='/login' element={ <Login/> }></Route>
           <Route path='/register' element={ <Register/> }></Route>
           <Route path='/checkOut' element={

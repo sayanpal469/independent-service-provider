@@ -16,7 +16,7 @@ const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
   <div className="container-fluid">
-    <Link to='/' className="navbar-brand" href="#">Navbar</Link>
+    <Link to='/' className="navbar-brand" href="#">Phonix.com</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -28,6 +28,11 @@ const Navbar = () => {
         <li className="nav-item">
           <Link to='/services' className="nav-link" href="home#services">Services</Link>
         </li>
+
+        <li className="nav-item">
+          <Link to='/gallery' className="nav-link" href="home#gallery">Gallery</Link>
+        </li>
+
         <li className="nav-item">
           <Link to='/' className="nav-link" href="#">Blogs</Link>
         </li>
@@ -46,7 +51,9 @@ const Navbar = () => {
           }
         </li>
         <li className="nav-item">
-          <Link id='register' to='/register' className="nav-link">Register</Link>
+          {
+            user ? <p>{user.displayName}</p> : ''
+          }
         </li>
       </ul>
     </div>

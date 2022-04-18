@@ -5,16 +5,16 @@ ul li{
 }
 
 #login{
-    background: orange;
-    color: #fff;
-    border-radius: 12px;
-    padding-left: 20px;
-    padding-right: 20px;
+    color: red;
     transition: 0.3s;
 }
 
 #login:hover{
-    background: blue;
+    background: orange;
+    border-radius: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
 }
 
 #register{

@@ -20,6 +20,12 @@
     border-radius: 25%;
 }
 
+.focused{
+    padding-left: 3%;
+    border-radius: 5px;
+    border-left: 5px solid #487eb0;
+}
+
 .button{
     padding: 10px 30px;
     text-decoration: none;

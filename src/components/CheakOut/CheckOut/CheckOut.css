@@ -1,0 +1,41 @@
+.form-group{
+    margin-bottom: 20px;
+}
+
+.form-group input{
+    font-size: 12px;
+    border-radius: 15px;
+}
+
+.form-floating textarea{
+    font-size: 18px;
+    border-radius: 15px;
+}
+
+#inputState{
+    font-size: 12px;
+    border-radius: 15px;
+}
+
+.icon{
+    font-size: 30px;
+    color: blue;
+}
+
+.contact-section{
+    background: #f5f6fa;
+    padding: 15px 10px;
+}
+.contact p{
+    font-size: 12px;
+}
+
+.submit{
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-color: #2827CC;
+    transition: 0.3s;
+}
