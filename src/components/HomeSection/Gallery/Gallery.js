@@ -3,7 +3,7 @@ import './Gallery.css'
 
 const Gallery = () => {
     return (
-        <div className='container'>
+        <div className='container mb-5'>
             <h1 className='text-center my-5'>Gallery</h1>
             <div class="row">
             <div class="col-4">

@@ -11,13 +11,17 @@ import CheckOut from './components/CheakOut/CheckOut/CheckOut';
 import About from './components/SharedPages/About/About';
 import Gallery from './components/HomeSection/Gallery/Gallery';
 import Blogs from './components/SharedPages/Blogs/Blogs';
+import Footer from './components/SharedPages/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
+
       <Navbar/>
+
       <Routes>
           <Route path='/' element={ <Home/> }></Route>
+          <Route path='/home' element={ <Home/> }></Route>
           <Route path='/services' element={ <Services/> }></Route>
           <Route path='/gallery' element={ <Gallery/> }></Route>
           <Route path='/login' element={ <Login/> }></Route>
@@ -29,9 +33,9 @@ function App() {
           }></Route>
           <Route path='/blogs' element={ <Blogs/> }></Route>
           <Route path='/about' element={ <About/> }></Route>
-          
           <Route path='*' element={ <NotFound/> }></Route>
       </Routes>
+      <Footer/>
     </div>
   );
 }
