@@ -3,29 +3,29 @@ import './CheckOut.css'
 
 const CheckOut = () => {
     return (
-        <section class="contact-section mt-5" id="contact">
+        <section class="contact-section mt-5 py-5" id="contact">
           <div class="text-center mb-5">
-            <h2 class="section-heading">Contact us</h2>
+            <h2 class="section-heading text-white">Contact us</h2>
           </div>
 
           <div class="contact container">
             <div class="row">
               <div class="col-lg-6 col-md-6 col-sm-1 text-center">
 
-                <h3><i class="icon fas fa-map-marker-alt"></i> My Office Adress</h3>
-                <p>1- 25, Bidhan Sarani Road, Sealdah, Kolkata, West Bengal 700006</p>
-                <p>2- Ground floor, 22nd Cross, #532, 23rd Main Rd, opp. Airtel Office, 2nd Sector, Parangi Palaya, Sector 2, HSR Layout, Bengaluru, Karnataka 560102</p>
-                <p>3- 1B, 704, Phase 3, West, Mohan Tulsi Vihar, Hendre Pada, Badlapur, Maharashtra 421503</p> <br/>
+                <h3 className='text-white'>My Office Adress</h3>
+                <p className='text-white'>1- 25, Bidhan Sarani Road, Sealdah, Kolkata, West Bengal 700006</p>
+                <p className='text-white'>2- Ground floor, 22nd Cross, #532, 23rd Main Rd, opp. Airtel Office, 2nd Sector, Parangi Palaya, Sector 2, HSR Layout, Bengaluru, Karnataka 560102</p>
+                <p className='text-white'>3- 1B, 704, Phase 3, West, Mohan Tulsi Vihar, Hendre Pada, Badlapur, Maharashtra 421503</p> <br/>
                 
 
-                <h3><i class="icon far fa-envelope"></i> General Enquiries</h3>
-                <p>Phonix.1@gmail.com</p>
+                <h3 className='text-white'><i class="icon far fa-envelope"></i> General Enquiries</h3>
+                <p className='text-white'>Phonix.1@gmail.com</p>
 
-                <h3><i class="icon fas fa-phone-alt"></i> Call Me</h3>
-                <p>+91-7872358979</p>
+                <h3 className='text-white'><i class="icon fas fa-phone-alt"></i> Call Me</h3>
+                <p className='text-white'>+91-7872358979</p>
 
-                <h3><i class="icon far fa-clock"></i> My Timing</h3>
-                <p>Mon-Sun : 10:00 AM - 07:00 PM</p>
+                <h3 className='text-white'><i class="icon far fa-clock"></i> My Timing</h3>
+                <p className='text-white'>Mon-Sun : 10:00 AM - 07:00 PM</p>
               </div>
 
               <div class="col-lg-6 col-md-6 col-sm-1">
