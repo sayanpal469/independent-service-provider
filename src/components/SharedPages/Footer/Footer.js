@@ -4,6 +4,8 @@ import { BsFacebook } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { GrTwitter } from "react-icons/gr";
+import { BsLinkedin } from "react-icons/bs";
+import { FcCamcorderPro } from "react-icons/fc";
 import './Footer.css'
 
 
@@ -16,29 +18,26 @@ const Footer = () => {
   >
     
     <div class="me-5 d-none d-lg-block">
-      <span>Get connected with us on social networks:</span>
+      <span>Get connected with me on social networks:</span>
     </div>
     
 
     
     <div>
-      <Link to="" class="me-4 text-reset">
-        <BsFacebook></BsFacebook>
+      <Link to="" class="me-4 icon text-reset">
+        <BsFacebook className='facebook'></BsFacebook>
       </Link>
-      <Link to="" class="me-4 text-reset">
-        <i class="fab fa-twitter"></i>
+      <Link to="" class="me-4 icon text-reset">
+        <BsInstagram className='insta'/>
       </Link>
-      <Link to="" class="me-4 text-reset">
-        <i class="fab fa-google"></i>
+      <Link to="" class="me-4 icon text-reset">
+        <BsGithub className='github'/>
       </Link>
-      <Link to="" class="me-4 text-reset">
-        <i class="fab fa-instagram"></i>
+      <Link to="" class="me-4 icon text-reset">
+        <GrTwitter className='twitter'/>
       </Link>
-      <Link to="" class="me-4 text-reset">
-        <i class="fab fa-linkedin"></i>
-      </Link>
-      <Link to="" class="me-4 text-reset">
-        <i class="fab fa-github"></i>
+      <Link to="" class="me-4 icon text-reset">
+        <BsLinkedin className='linkedIn'/>
       </Link>
     </div>
     
@@ -54,49 +53,45 @@ const Footer = () => {
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           
           <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i>Company name
+           <FcCamcorderPro className='camera-icon'/> Phonix Photography Pvt Ltd
           </h6>
           <p>
-            Here you can use rows and columns to organize your footer content. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit.
+            Wild Life Photography Agency
           </p>
         </div>
         
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
           
           <h6 class="text-uppercase fw-bold mb-4">
-            Products
+            Services
           </h6>
           <p>
-            <Link to="#!" class="text-reset">Angular</Link>
+            <Link to="#!" class="text-reset">Environmental Portraits</Link>
           </p>
           <p>
-            <Link to="#!" class="text-reset">React</Link>
+            <Link to="#!" class="text-reset">Frame-filling Portraits</Link>
           </p>
           <p>
-            <Link to="#!" class="text-reset">Vue</Link>
+            <Link to="#!" class="text-reset">Capture Behavior</Link>
           </p>
           <p>
-            <Link to="#!" class="text-reset">Laravel</Link>
+            <Link to="#!" class="text-reset">Gesture</Link>
           </p>
         </div>
         
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
           
           <h6 class="text-uppercase fw-bold mb-4">
-            Useful links
+            About Us
           </h6>
           <p>
-            <Link to="#!" class="text-reset">Pricing</Link>
+            <Link to="#!" class="text-reset">Company</Link>
           </p>
           <p>
-            <Link to="#!" class="text-reset">Settings</Link>
+            <Link to="#!" class="text-reset">Work</Link>
           </p>
           <p>
-            <Link to="#!" class="text-reset">Orders</Link>
-          </p>
-          <p>
-            <Link to="#!" class="text-reset">Help</Link>
+            <Link to="#!" class="text-reset">Careers</Link>
           </p>
         </div>
         

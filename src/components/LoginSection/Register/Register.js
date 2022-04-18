@@ -6,12 +6,13 @@ import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import Loading from '../../SharedPages/Loading/Loading';
-
+import { useUpdateProfile } from 'react-firebase-hooks/auth';
 
 const Register = () => {
     const navigate = useNavigate()
     const [error, setError] = useState('')
     const [confirmPassword, setConfirmPassword] = useState('')
+    const [updateProfile, updating, updateError] = useUpdateProfile(auth);
    
     const handelConfirmPasswordBlur = (e) => {
       setConfirmPassword(e.target.value)
@@ -22,17 +23,14 @@ const Register = () => {
         user,
         loading,
         error1,
-      ] = useCreateUserWithEmailAndPassword(auth);
+      ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
+      
 
       if(loading) {
          return <Loading/>
       }
-
-      if(user) {
-        navigate('/')
-      }
     
-    const handelSubmit = (e) => {
+    const handelRegister = async (e) => {
         e.preventDefault()
 
         const name = e.target.name.value
@@ -45,7 +43,9 @@ const Register = () => {
           return
       }
 
-        createUserWithEmailAndPassword(email, password)
+      await createUserWithEmailAndPassword(email, password)
+      await updateProfile({ displayName: name })
+      navigate('/home')
     }
 
     return (
@@ -55,7 +55,7 @@ const Register = () => {
             </div>
             
       <div className='col-lg-6'>
-        <form id='form' onSubmit={handelSubmit} className='w-75 mx-auto mt-5 shadow p-5 h-auto'>
+        <form id='form' onSubmit={handelRegister} className='w-75 mx-auto mt-5 shadow p-5 h-auto'>
         <h1 className='text-center mb-5 text-primary'>Register</h1>
         
         <div className="mb-3">
@@ -76,14 +76,7 @@ const Register = () => {
     </div>
 
 
-    <div className='d-flex justify-content-between mb-2'>
-    <div className="mb-3 form-check">
-    <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
-    <label className="form-check-label" for="exampleCheck1">Please accept <br /> All terms and conditions</label>
-    </div>
-
-    <Link id='forgot' to='/login'>Forgot Password?</Link>
-    </div>
+    
 
 <p className='text-danger text-center'>{error}</p>
 

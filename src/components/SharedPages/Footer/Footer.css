@@ -1,5 +1,9 @@
 .icon{
     margin: 15px;
+    font-size: 32px;
+}
+
+.camera-icon{
     font-size: 40px;
 }
 
@@ -17,4 +21,8 @@
 
 .twitter{
     color: #1da1f2;
+}
+
+.linkedIn{
+    color: #0e76a8;
 }
