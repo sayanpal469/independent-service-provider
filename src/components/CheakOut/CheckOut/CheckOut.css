@@ -5,6 +5,7 @@
 .form-group input{
     font-size: 12px;
     border-radius: 15px;
+    padding: 10px;
 }
 
 .form-floating textarea{

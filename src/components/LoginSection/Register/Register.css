@@ -23,10 +23,10 @@ box-shadow:  24px 24px 14px #d9d9d9,
 }
 
 .btn{
-    border-radius: 40px;
+    border-radius: 10px;
     border: none;
-    padding-top: 10px;
-    padding-bottom: 8px;
+    font-size: 20px;
+    transition: 0.3s;
 }
 
 .btn:hover{

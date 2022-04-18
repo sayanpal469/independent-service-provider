@@ -18,13 +18,13 @@ const CheckOut = () => {
                 <p className='text-white'>3- 1B, 704, Phase 3, West, Mohan Tulsi Vihar, Hendre Pada, Badlapur, Maharashtra 421503</p> <br/>
                 
 
-                <h3 className='text-white'><i class="icon far fa-envelope"></i> General Enquiries</h3>
+                <h3 className='text-white'>General Enquiries</h3>
                 <p className='text-white'>Phonix.1@gmail.com</p>
 
-                <h3 className='text-white'><i class="icon fas fa-phone-alt"></i> Call Me</h3>
+                <h3 className='text-white'>Call Me</h3>
                 <p className='text-white'>+91-7872358979</p>
 
-                <h3 className='text-white'><i class="icon far fa-clock"></i> My Timing</h3>
+                <h3 className='text-white'>My Timing</h3>
                 <p className='text-white'>Mon-Sun : 10:00 AM - 07:00 PM</p>
               </div>
 
