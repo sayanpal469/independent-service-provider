@@ -1,6 +1,7 @@
-# Assingment 10
+# Assingment 10 
+## Independent Service Phonix.com 
 
-Live Site Link- https://lighthearted-meringue-54658b.netlify.app/
+Live Site Link- https://tourmaline-malasada-6308d2.netlify.app/
 ## Total Pages: 05
 ## Total Route 8
 
